@@ -1025,3 +1025,5 @@ class TestDexml(unittest.TestCase):
         self.assertRaises(dexml.ParseError,Notebook.parse,"<Notebook><wtf /><notes><note>one</note><note>two</note><wtf /></notes></Notebook>")
         self.assertRaises(dexml.ParseError,Notebook.parse,"<Notebook tag='home'><notes><note>one</note><note>two</note></notes></Notebook>")
 
+if __name__ == '__main__':
+    unittest.main()
